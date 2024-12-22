@@ -1,0 +1,360 @@
+goal_structure oascf_g1;
+goal G1 {
+    description: "Our autonomous driver 
+    is safe enough to deploy";
+    supported_by: S1;
+}
+strategy S1 {
+    description: "Argument based on 
+    Positive Trust Balance";
+    supported_by: G2_1;
+    supported_by: G2_2;
+    supported_by: G2_3;
+}
+goal G2_1 {
+    description: "Our organisation is trustworthy";
+    supported_by: S2_1;
+}
+strategy S2_1 {
+    description: "We have a track record of a 
+    strong safety culture, management, and processes";
+    supported_by: G3_1_1;
+    supported_by: G3_1_2;
+    supported_by: G3_1_3;
+    supported_by: G3_1_4;
+}
+goal G3_1_1 {
+    description: "We define how safe is safe enough
+    in alignment with societal expectations";
+    supported_by: S3_1_1;
+}
+goal S3_1_1 {
+    description: "We follow ethical best practices,
+    safety standards, and regulations";
+    supported_by: G4_1_1;
+}
+goal G4_1_1 {
+    description: "We define Risk Acceptance Criteria (RAC)
+    based on ethical best practices, safety standards,and regulations";
+}
+goal G3_1_2 {
+    description: "We do not deploy the system
+    before demonstrating that it is safe enough";
+    supported_by: S3_1_2;
+}
+goal S3_1_2 {
+    description: "Our Safety Management System (SMS)
+     follows FAA best practices";
+    supported_by: G4_1_2;
+}
+goal G4_1_2 {
+    description: "Our SMS ensures that RAC are met
+    before deploying autonomy";
+}
+goal G3_1_3 {
+    description: "We continuously improve the processes
+    adopted during the system lifecycle 
+    based on feedback from stakeholders";
+    supported_by: S3_1_3;
+}
+goal S3_1_3 {
+    description: "We follow best practices 
+    from the FAA on issue reporting";
+    supported_by: G4_1_3;
+}
+goal G4_1_3 {
+    description: "Our Safety Program Plan (SPP) 
+    includes implementing feedback from stakeholders
+    and sharing lessons learned with the public sector";
+}
+goal G3_1_4 {
+    description: "Our team is empowered to pause
+    deployment if safety risks are discovered";
+    supported_by: S3_1_4;
+}
+goal S3_1_4 {
+    description: "Our SPP follows FAA best practices";
+    supported_by: G4_1_4;
+}
+goal G4_1_4 {
+    description: "We deliver incident reports and 
+    SPI statistics to the relevant policy makers";
+}
+goal G2_2 {
+    description: "We sufficiently mitigated the risk 
+    imposed by our autonomous driver";
+    supported_by: S2_2;
+}
+strategy S2_2 {
+    description: "Our SMS follows best practices 
+    for system safety engineering";
+    supported_by: G3_2_1; 
+    supported_by: G3_2_2;
+    supported_by: G3_2_3;
+}
+goal G3_2_1 {
+    description: "We accurately defined the autonomous driver
+    and its intended uses";
+    supported_by: S3_2_1;
+}
+strategy S3_2_1 {
+    description: "We follow ISO 26262, ISO 21448, and UL 4600";
+    supported_by: G4_2_1;
+    supported_by: G3_2_2;
+}
+goal G4_2_1 {
+    description: "We defined the system and its interfaces with 
+    the environment, the autonomy architecture, the ODD, and the theory of operation";
+}
+goal G3_2_2 {
+    description: "Our Safety Risk Management (SRM) correctly estimated 
+    the risk posed by the autonomous driver";
+    supported_by: S3_2_2;
+    supported_by: S3_2_3;
+}
+strategy S3_2_2 {
+    description: "Our SRM follows best practices 
+    from MIL-STD-882E to analyze risks";
+    supported_by: G4_2_2;
+    supported_by: G4_2_3;
+    supported_by: G4_2_4;
+    supported_by: G4_2_5;
+}
+goal G4_2_2 {
+    description: "We identified all 
+    mishaps that might occur during operation";
+    supported_by: S4_2_2;
+}
+strategy S4_2_2 {
+description: "Our SRM follows best practices from MIL-STD-882E";
+supported_by: G5_2_1;
+}
+goal G5_2_1 {
+description: "Our Preliminary Hazard Analysis (PHA)
+conforms with MIL-STD-882E";
+}
+goal G4_2_3 {
+description: "We identified all hazards 
+that can lead to mishaps";
+supported_by: S4_2_3;
+}
+strategy S4_2_3 {
+description: "Our SRM follows best practices from
+MIL-STD-882E FunctionalHazard Analysis (FHA)";
+supported_by: G5_2_2;
+}
+goal G5_2_2 {
+    description: "Our FHA conforms with MIL-STD-882E";
+}
+goal G4_2_4 {
+    description: "We identified all causal factors 
+    that can lead to hazards";
+    supported_by: S4_2_4;
+}
+strategy S4_2_4 {
+    description: "Our SRM follows best practices
+    from MIL-STD-882E";
+    supported_by: G5_2_3;
+}
+goal G5_2_3 {
+    description: "Our System Hazard Analysis (SHA) and 
+    Subsystem Hazard Analysis (SSHA) conform with MIL-STD-882E";
+}
+goal G4_2_5 {
+    description: "We modeled how the 
+    mitigations could lead to hazards";
+    supported_by: S4_2_5;
+}
+strategy S4_2_5 {
+    description: "Our SRM analyzes hazards based on 
+    the system design, including mitigations";
+    supported_by: G5_2_4;
+}
+goal G5_2_4 {
+    description: "Our Safety Verification activities
+    conform with MIL-STD-882E and UL 4600";
+}
+strategy S3_2_3 {
+    description: "Our SRM follows best practices from UL 4600 to assess 
+    risk of autonomy algorithms";
+    supported_by: G4_2_6;
+}
+goal G4_2_6 {
+    description: "We modeled the risk that autonomy
+    algorithms constribute to hazards";
+    supported_by: S4_2_6;
+}
+strategy S4_2_6 {
+    description: "Our SRM follows best practices
+    to perform SOTIF analysis";
+    supported_by: G5_2_5;
+}
+goal G5_2_5 {
+    description: "Our QFTA conforms with SOTIF";
+}
+goal G3_2_3 {
+    description: "Our SRM determined that all risks 
+    have been mitigated to satisfy RAC";
+    supported_by: S3_2_4;
+}
+strategy S3_2_4 {
+    description: "Our SRM follows best practices 
+    from UL 4600 to mitigate risks";
+    supported_by: G4_2_7;
+    supported_by: G4_2_8;
+    supported_by: G4_2_9;
+    supported_by: G4_2_10;
+}
+goal G4_2_7 {
+    description: "We specified mitigations for each identified risk";
+    supported_by: S4_2_7;
+}
+strategy S4_2_7 {
+    description: "Our SRM follows best 
+    practices from MIL-STD-882E";
+    supported_by: G5_2_6;
+}
+goal G5_2_6 {
+    description: "Our Safety Requirements and 
+    Hazard Analysis conforms with MIL-STD-882E";
+}
+goal G4_2_8 {
+    description: "We implemented the specified mitigations
+    with a suitable Level of Rigour (LoR)";
+    supported_by: S4_2_8;
+}
+strategy S4_2_8 {
+    description: "Our SRM follows best practices 
+    from MIL-STD-882E";
+    supported_by: G5_2_7;
+}
+goal G5_2_7 {
+    description: "We conformed with 
+    MIL-STD-882E LoR requirements";
+}
+goal G4_2_9 {
+    description: "We verified that we implemented 
+    the specified mitigations right";
+    supported_by: S4_2_9;
+}
+strategy S4_2_9 {
+    description: "Our SRM follows best practices from 
+    MIL-STD-882E, ISO-26262,and ISO-21448";
+    supported_by: G5_2_8;
+}
+goal G5_2_8 {
+    description: "Our Safety Verification activities 
+    conform with MIL-STD-882E, ISO-26262, andISO-21448";
+}
+goal G4_2_10 {
+    description: "We validated that we 
+    implemented the right mitigations";
+    supported_by: S4_2_10;
+}
+strategy S4_2_10 {
+    description: "Our SRM follows best practices from 
+    MIL-STD-882E, UL 4600 ,ISO-26262, and ISO-21448";
+    supported_by: G5_2_9;
+}
+goal G5_2_9 {
+    description: "Our Safety Validation activities conform with 
+    MIL-STD-882E, UL 4600, ISO-26262, and ISO-21448";
+}
+goal G2_3 {
+    description: "We are continuously mitigating risks 
+    of unknown unknowns posed by the autonomous driver";
+    supported_by: S2_3;
+}
+strategy S2_3 {
+    description: "Our SMS follows best practices 
+    for system safety engineering";
+    supported_by: G3_3_1;
+    supported_by: G3_3_2;
+}
+goal G3_3_1 {
+    description: "Our Safety Assurance (SA) identifies 
+    new risks from edge cases that occur in operation";
+    supported_by: S3_3_1;
+}
+strategy S3_3_1 {
+    description: "Our SA follows best practices 
+    from FAA and UL4600";
+    supported_by: G4_3_1;
+    supported_by: G4_3_2;
+}
+goal G4_3_1 {
+    description: "We monitor SPIs to detect edge cases";
+}
+goal G4_3_2 {
+    description: "We update our hazard analyses 
+    when SPI violations are found";
+}
+goal G3_3_2 {
+    description:"Our SA mitigates risks
+    found before they lead to mishaps";
+    supported_by: S3_3_2;
+}
+strategy S3_3_2 {
+    description: "Our SA follows best practices
+    from FAA and UL4600";
+    supported_by:G4_3_3;
+    supported_by:G4_3_4;
+    supported_by:G4_3_5;
+    supported_by:G4_3_6;
+}
+goal G4_3_3 {
+    description: "We limit deployment scale
+    based on confidence in our risk estimate";
+    supported_by: S4_3_3;
+}
+strategy S4_3_3 {
+    description: "We follow statistical SPI bootstrapping
+    methods to limit the deployment scale";
+    supported_by: G5_3_1;
+}
+goal G5_3_1 {
+    description: "Our deployment scale is
+    limited to satisfy RAC";
+}
+goal G4_3_4 {
+    description: "We ground the fleet if edge cases
+    occur too frequently in operation";
+    supported_by: S4_3_4;
+}
+strategy S4_3_4 {
+    description: "We follow statistical SPI Bootstrapping 
+    methods to limit the deployment scale";
+    supported_by: G5_3_2;
+}
+goal G5_3_2 {
+    description: "We ground the fleet if SPI violations
+    are more frequent than specified in RAC";
+}
+goal G4_3_5 {
+    description: "We ground the fleet if
+    hazards occur too frequently in operation";
+    supported_by: S4_3_5;
+}
+strategy S4_3_5 {
+    description: "Our SA follows best practices 
+    from the FAA";
+    supported_by: G5_3_3;
+}
+goal G5_3_3 {
+    description: "We ground the fleet if hazards occur 
+    more frequently than specified in RAC";
+}
+goal G4_3_6 {
+    description: "We field mitigations for new
+    risks identified in operation";
+    supported_by: S4_3_6;
+}
+strategy S4_3_6 {
+    description: "Our SRM follows best practices 
+    from MIL-STD-882E";
+    supported_by: G5_3_4;
+}
+goal G5_3_4 {
+    description: "We iterate SRM to mitigate new 
+    risks identified in operation";
+}
