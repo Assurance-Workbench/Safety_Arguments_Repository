@@ -1,4 +1,4 @@
-goal_structure oascf_g1;
+goal_structure OASCF_G1;
 goal G1 {
     description: "Our autonomous driver 
     is safe enough to deploy";
