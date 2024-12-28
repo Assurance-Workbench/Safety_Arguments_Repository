@@ -1,0 +1,70 @@
+goal_structure OASCF_G2_1;
+goal G2_1 {
+    description: "Our organisation is trustworthy";
+    supported_by: S2_1;
+}
+strategy S2_1 {
+    description: "We have a track record of a 
+    strong safety culture, management, and processes";
+    supported_by: G3_1_1;
+    supported_by: G3_1_2;
+    supported_by: G3_1_3;
+    supported_by: G3_1_4;
+}
+goal G3_1_1 {
+    description: "We define how safe is safe enough
+    in alignment with societal expectations";
+    supported_by: S3_1_1;
+}
+goal S3_1_1 {
+    description: "We follow ethical best practices,
+    safety standards, and regulations";
+    supported_by: G4_1_1;
+}
+goal G4_1_1 {
+    description: "We define Risk Acceptance Criteria (RAC)
+    based on ethical best practices, safety standards,and regulations";
+}
+goal G3_1_2 {
+    description: "We do not deploy the system
+    before demonstrating that it is safe enough";
+    supported_by: S3_1_2;
+}
+goal S3_1_2 {
+    description: "Our Safety Management System (SMS)
+     follows FAA best practices";
+    supported_by: G4_1_2;
+}
+goal G4_1_2 {
+    description: "Our SMS ensures that RAC are met
+    before deploying autonomy";
+}
+goal G3_1_3 {
+    description: "We continuously improve the processes
+    adopted during the system lifecycle 
+    based on feedback from stakeholders";
+    supported_by: S3_1_3;
+}
+goal S3_1_3 {
+    description: "We follow best practices 
+    from the FAA on issue reporting";
+    supported_by: G4_1_3;
+}
+goal G4_1_3 {
+    description: "Our Safety Program Plan (SPP) 
+    includes implementing feedback from stakeholders
+    and sharing lessons learned with the public sector";
+}
+goal G3_1_4 {
+    description: "Our team is empowered to pause
+    deployment if safety risks are discovered";
+    supported_by: S3_1_4;
+}
+goal S3_1_4 {
+    description: "Our SPP follows FAA best practices";
+    supported_by: G4_1_4;
+}
+goal G4_1_4 {
+    description: "We deliver incident reports and 
+    SPI statistics to the relevant policy makers";
+}
