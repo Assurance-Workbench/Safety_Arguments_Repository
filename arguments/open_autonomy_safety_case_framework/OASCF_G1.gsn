@@ -1,0 +1,27 @@
+goal_structure OASCF_G1;
+goal G1 {
+    description: "Our autonomous driver 
+    is safe enough to deploy";
+    supported_by: S1;
+}
+strategy S1 {
+    description: "Argument based on 
+    Positive Trust Balance";
+    supported_by: G2_1_away;
+    supported_by: G2_2_away;
+    supported_by: G2_3_away;
+}
+goal G2_1_away {
+    description: "Our organisation is trustworthy";
+    away: G2_1;
+}
+goal G2_2_away {
+    description: "We sufficiently mitigated the risk 
+    imposed by our autonomous driver";
+    away: G2_2;
+}
+goal G2_3_away {
+    description: "We are continuously mitigating risks 
+    of unknown unknowns posed by the autonomous driver";
+    away: G2_3;
+}

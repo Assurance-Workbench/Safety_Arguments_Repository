@@ -1,0 +1,181 @@
+goal_structure G2_2;
+goal G2_2 {
+    description: "We sufficiently mitigated the risk 
+    imposed by our autonomous driver";
+    supported_by: S2_2;
+}
+strategy S2_2 {
+    description: "Our SMS follows best practices 
+    for system safety engineering";
+    supported_by: G3_2_1; 
+    supported_by: G3_2_2;
+    supported_by: G3_2_3;
+}
+goal G3_2_1 {
+    description: "We accurately defined the autonomous driver
+    and its intended uses";
+    supported_by: S3_2_1;
+}
+strategy S3_2_1 {
+    description: "We follow ISO 26262, ISO 21448, and UL 4600";
+    supported_by: G4_2_1;
+    supported_by: G3_2_2;
+}
+goal G4_2_1 {
+    description: "We defined the system and its interfaces with 
+    the environment, the autonomy architecture, the ODD, and the theory of operation";
+}
+goal G3_2_2 {
+    description: "Our Safety Risk Management (SRM) correctly estimated 
+    the risk posed by the autonomous driver";
+    supported_by: S3_2_2;
+    supported_by: S3_2_3;
+}
+strategy S3_2_2 {
+    description: "Our SRM follows best practices 
+    from MIL-STD-882E to analyze risks";
+    supported_by: G4_2_2;
+    supported_by: G4_2_3;
+    supported_by: G4_2_4;
+    supported_by: G4_2_5;
+}
+goal G4_2_2 {
+    description: "We identified all 
+    mishaps that might occur during operation";
+    supported_by: S4_2_2;
+}
+strategy S4_2_2 {
+description: "Our SRM follows best practices from MIL-STD-882E";
+supported_by: G5_2_1;
+}
+goal G5_2_1 {
+description: "Our Preliminary Hazard Analysis (PHA)
+conforms with MIL-STD-882E";
+}
+goal G4_2_3 {
+description: "We identified all hazards 
+that can lead to mishaps";
+supported_by: S4_2_3;
+}
+strategy S4_2_3 {
+description: "Our SRM follows best practices from
+MIL-STD-882E FunctionalHazard Analysis (FHA)";
+supported_by: G5_2_2;
+}
+goal G5_2_2 {
+    description: "Our FHA conforms with MIL-STD-882E";
+}
+goal G4_2_4 {
+    description: "We identified all causal factors 
+    that can lead to hazards";
+    supported_by: S4_2_4;
+}
+strategy S4_2_4 {
+    description: "Our SRM follows best practices
+    from MIL-STD-882E";
+    supported_by: G5_2_3;
+}
+goal G5_2_3 {
+    description: "Our System Hazard Analysis (SHA) and 
+    Subsystem Hazard Analysis (SSHA) conform with MIL-STD-882E";
+}
+goal G4_2_5 {
+    description: "We modeled how the 
+    mitigations could lead to hazards";
+    supported_by: S4_2_5;
+}
+strategy S4_2_5 {
+    description: "Our SRM analyzes hazards based on 
+    the system design, including mitigations";
+    supported_by: G5_2_4;
+}
+goal G5_2_4 {
+    description: "Our Safety Verification activities
+    conform with MIL-STD-882E and UL 4600";
+}
+strategy S3_2_3 {
+    description: "Our SRM follows best practices from UL 4600 to assess 
+    risk of autonomy algorithms";
+    supported_by: G4_2_6;
+}
+goal G4_2_6 {
+    description: "We modeled the risk that autonomy
+    algorithms constribute to hazards";
+    supported_by: S4_2_6;
+}
+strategy S4_2_6 {
+    description: "Our SRM follows best practices
+    to perform SOTIF analysis";
+    supported_by: G5_2_5;
+}
+goal G5_2_5 {
+    description: "Our QFTA conforms with SOTIF";
+}
+goal G3_2_3 {
+    description: "Our SRM determined that all risks 
+    have been mitigated to satisfy RAC";
+    supported_by: S3_2_4;
+}
+strategy S3_2_4 {
+    description: "Our SRM follows best practices 
+    from UL 4600 to mitigate risks";
+    supported_by: G4_2_7;
+    supported_by: G4_2_8;
+    supported_by: G4_2_9;
+    supported_by: G4_2_10;
+}
+goal G4_2_7 {
+    description: "We specified mitigations for each identified risk";
+    supported_by: S4_2_7;
+}
+strategy S4_2_7 {
+    description: "Our SRM follows best 
+    practices from MIL-STD-882E";
+    supported_by: G5_2_6;
+}
+goal G5_2_6 {
+    description: "Our Safety Requirements and 
+    Hazard Analysis conforms with MIL-STD-882E";
+}
+goal G4_2_8 {
+    description: "We implemented the specified mitigations
+    with a suitable Level of Rigour (LoR)";
+    supported_by: S4_2_8;
+}
+strategy S4_2_8 {
+    description: "Our SRM follows best practices 
+    from MIL-STD-882E";
+    supported_by: G5_2_7;
+}
+goal G5_2_7 {
+    description: "We conformed with 
+    MIL-STD-882E LoR requirements";
+}
+goal G4_2_9 {
+    description: "We verified that we implemented 
+    the specified mitigations right";
+    supported_by: S4_2_9;
+}
+strategy S4_2_9 {
+    description: "Our SRM follows best practices from 
+    MIL-STD-882E, ISO-26262,and ISO-21448";
+    supported_by: G5_2_8;
+}
+goal G5_2_8 {
+    description: "Our Safety Verification activities 
+    conform with MIL-STD-882E, ISO-26262, andISO-21448";
+}
+goal G4_2_10 {
+    description: "We validated that we 
+    implemented the right mitigations";
+    supported_by: S4_2_10;
+}
+strategy S4_2_10 {
+    description: "Our SRM follows best practices from 
+    MIL-STD-882E, UL 4600 ,ISO-26262, and ISO-21448";
+    supported_by: G5_2_9;
+}
+goal G5_2_9 {
+    description: "Our Safety Validation activities conform with 
+    MIL-STD-882E, UL 4600, ISO-26262, and ISO-21448";
+} 
