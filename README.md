@@ -15,13 +15,11 @@ A repository of safety arguments:
   - Define a new goal structure, at the begining of the file, using: `goal_structure <goal_structure_name>;`
   - Define the goal structure elements, using: `<element_type> <element_name> {description: "<element description>";}`. For example:
     `goal G1 {
-    description: "Our autonomous driver 
-    is safe enough to deploy";
+    description: "Our autonomous driver is safe enough to deploy";
     }`
   - Specify relationships between the goal structure elements, adding to an element the following: `supported_by: <name_of_the_supporting_element>;` or `in_context_of: <name_of_the_context_element>;`. For example:
     `goal G1 {
-    description: "Our autonomous driver 
-    is safe enough to deploy";
+    description: "Our autonomous driver is safe enough to deploy";
     supported_by: S1;
     }`
 8. Commit and push the changes to your branch.
