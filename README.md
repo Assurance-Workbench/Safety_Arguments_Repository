@@ -20,11 +20,18 @@ A repository of safety arguments:
     `goal G1 {
     description: "Our autonomous driver is safe enough to deploy";
     supported_by: S1;
-    }`
-  - Reference elements in other diagrams from elements in the current diagram via the _away_ attribute.
+    }`.
+  - Reference elements in other diagrams from elements in the current diagram via the _away_ attribute. For example: `strategy Str1_1 {
+description: "Description";
+supported_by: G2_1_away;
+}
+goal G2_1_away {
+description: "Description";
+away: G2_1;
+}`
 7. Open the diagram.
 8. Commit and push the changes to your branch.
 9. Edit your argument as many times as you want. Don't forget to commit your changes!
-10. Before publishing your argument to the Safety Arguments Repository, edit the _Readme.md_ file in the folder of the argument. In this file, you can add a bit of information about the argument you specified. For example: where it was first published, its main goal, or how and when it could be used in a safety case. 
+10. Before publishing your argument to the Safety Arguments Repository, edit the _Readme.md_ file in the folder of the argument. In this file, you can add a bit of information about the argument you specified. For example: where it was first published, its main goal, or how and when it could be used in a safety case. You can take inspiration from the Readme files of other arguments in the repository.
 11. Create a merge request. Your contriution will be then reviewed and will either be merged into the main branch, or you will receive some recommendation for improvement.
 
