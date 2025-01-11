@@ -21,8 +21,9 @@ A repository of safety arguments:
     description: "Our autonomous driver is safe enough to deploy";
     supported_by: S1;
     }`
-7. Commit and push the changes to your branch.
-8. Edit your argument as many times as you want.
-9. Before publishing your argument to the Safety Arguments Repository, edit the _Readme.md_ file in the folder of the argument. In this file, you can add a bit of information about the argument you specified. For example: where it was first published, its main goal, or how and when it could be used in a safety case. 
-10. Create a merge request. Your contriution will be then reviewed and will either be merged into the main branch, or you will receive some recommendation for improvement.
+7. Open the diagram.
+8. Commit and push the changes to your branch.
+9. Edit your argument as many times as you want.
+10. Before publishing your argument to the Safety Arguments Repository, edit the _Readme.md_ file in the folder of the argument. In this file, you can add a bit of information about the argument you specified. For example: where it was first published, its main goal, or how and when it could be used in a safety case. 
+11. Create a merge request. Your contriution will be then reviewed and will either be merged into the main branch, or you will receive some recommendation for improvement.
 
