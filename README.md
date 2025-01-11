@@ -7,7 +7,9 @@ A repository of safety arguments:
 
 1. Optionally, clone the repository on your local machine.
 2. Create a new branch to the repository either locally or directly on github. In this branch, you will add your argument.
+
 ![Creating a new branch](./figures/create_branch.gif)
+
 3. In the newly created branch, add a folder with a _Readme.md_ file. The folder should be under the _arguments_ parent folder. For example,  _arguments/myargument_. After creating the new folder, commit the changes.
 ![Creating a folder](./figures/create_folder.gif)
 4. Create a new codespace in the github cloud. An IDE for VSCode will open with the _Safety Arguments Repository_ project. Alternatively, if you are working on  on your local machine, open the project in VSCode IDE. There, you will also find your newly created folder. Once you created a codespace, you can access it whenever you want.
